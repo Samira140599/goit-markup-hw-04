@@ -5,6 +5,7 @@
   --main-color: #757575;
   --dark-color: #212121;
   --white-color: #ffffff;
+  --overlay-color: #f5f4fa;
 }
 
 /*ОБЩИЕ НАСТРОЙКИ*/
@@ -154,7 +155,7 @@ img {
   letter-spacing: 3%;
   border-radius: 4px;
   padding: 6px 22px;
-  background-color: #f5f4fa;
+  background-color: var(--overlay-color);
   border-width: 0;
 }
 
@@ -260,9 +261,23 @@ img {
 .hero {
   margin-bottom: 94px;
   text-align: center;
-  background-color: grey;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--dark-color);
+}
+.overlay {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -303,7 +318,26 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
+.advantages-list-items:before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--overlay-color);
+}
+.advantages-list-items:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+.advantages-list-items:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+.advantages-list-items:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.advantages-list-items:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
 a .variants {
   font-weight: 700;
   font-size: 14px;
@@ -337,6 +371,7 @@ a .variants {
   text-align: center;
   margin-bottom: 200px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .descriptions {
@@ -356,7 +391,12 @@ a .variants {
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-list-item {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-container {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -364,6 +404,31 @@ a .variants {
   margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+}
+.social-links {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white-color);
+}
+.insta {
+  background-image: url(../images/instagram.svg);
+}
+.facebook {
+  background-image: url(../images/facebook.svg);
+}
+.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+.twitter {
+  background-image: url(../images/twitter.svg);
+}
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
 }
 
 .team-title {
