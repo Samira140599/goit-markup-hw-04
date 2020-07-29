@@ -114,8 +114,16 @@ img {
   vertical-align: top;
   letter-spacing: 2%;
 }
+.tel-link {
+  margin-left: 31px;
+}
+.contacts-item {
+  margin-right: 10px;
+  width: 16px;
+  height: 11px;
+}
 
-.contacts-list :not(:last-child) {
+.contacts-list :nth-child(an + b = 2n) {
   margin-right: 30px;
 }
 
@@ -413,24 +421,20 @@ a .variants {
   background-position: center;
   background-color: var(--white-color);
 }
-.insta {
-  background-image: url(../images/instagram.svg);
-}
-.facebook {
-  background-image: url(../images/facebook.svg);
-}
-.linkedin {
-  background-image: url(../images/linkedin.svg);
-}
-.twitter {
-  background-image: url(../images/twitter.svg);
-}
+
 .social-links-list {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
 }
-
+.social-links-svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.social-links-svg: :hover, .social-links-svg:focus {
+  fill: #ffffff;
+}
 .team-title {
   margin: 0em;
   color: var(--dark-color);
@@ -529,7 +533,9 @@ a .variants {
 }
 
 .contacts-footer-link:hover,
-.contacts-footer-link:focus {
+.contacts-footer-link:focus,
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--accent-color);
 }
 
