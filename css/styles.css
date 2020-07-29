@@ -431,15 +431,15 @@ a .variants {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-}
-.social-links-svg: :hover, {
-  fill: #ffffff;
+  align-items: center;
 }
 .social-links:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
-
+.social-links-svg:hover {
+  fill: #ffffff;
+}
 .team-title {
   margin: 0em;
   color: var(--dark-color);
