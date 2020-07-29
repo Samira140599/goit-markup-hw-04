@@ -432,9 +432,14 @@ a .variants {
   height: 20px;
   margin-right: 10px;
 }
-.social-links-svg: :hover, .social-links-svg:focus {
+.social-links-svg: :hover, {
   fill: #ffffff;
 }
+.social-links:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
 .team-title {
   margin: 0em;
   color: var(--dark-color);
