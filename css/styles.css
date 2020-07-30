@@ -121,6 +121,7 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 11px;
+  fill: #757575;
 }
 
 .contacts-list :nth-child(an + b = 2n) {
@@ -426,12 +427,15 @@ a .variants {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
+  align-items: center;
 }
 .social-links-svg {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  justify-content: center;
   align-items: center;
+  fill: #afb1b8;
 }
 .social-links:hover {
   background-color: var(--accent-color);
