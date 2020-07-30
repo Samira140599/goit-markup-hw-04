@@ -508,10 +508,10 @@ a .variants {
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  fill: #afb1b8;
+  
 }
 .clients-svg:hover .clients-svg:focus {
-  fill: var(--accent-color);
+  --color1:var(--accent-color)
 }
 
 .clients-link {
@@ -573,7 +573,7 @@ a .variants {
   background-color: var(--accent-color);
 }
 .footer-svg {
-  fill: #ffffff;
+  --color2:#ffffff
   width: 20px;
   height: 20px;
   display: block;
