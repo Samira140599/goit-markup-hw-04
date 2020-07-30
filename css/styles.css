@@ -419,7 +419,8 @@ a .variants {
   display: flex;
   height: 44px;
   width: 44px;
-  outline: 2px solid green;
+  border-radius: 50%;
+  background-color: #ffffff;
   justify-content: center;
 }
 
@@ -500,7 +501,8 @@ a .variants {
   padding-top: 20px;
   --color1: #afb1b8;
 }
-.clients-svg:hover .clients-svg:focus {
+.clients-svg:hover,
+.clients-svg:focus {
   --color1: var(--accent-color);
 }
 
