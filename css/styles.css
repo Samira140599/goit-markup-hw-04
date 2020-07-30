@@ -416,12 +416,11 @@ a .variants {
   margin-right: auto;
 }
 .social-links {
-  display: inline-block;
+  display: flex;
   height: 44px;
   width: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--white-color);
+  outline: 2px solid green;
+  justify-content: center;
 }
 
 .social-links-list {
@@ -433,20 +432,11 @@ a .variants {
   width: 20px;
   height: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  align-items: center;
-  justify-content: center;
-
-  fill: #afb1b8;
+  align-self: center;
 }
 .social-links:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .social-links-svg:hover {
   --color2: #ffffff;
@@ -508,10 +498,10 @@ a .variants {
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  
+  --color1: #afb1b8;
 }
 .clients-svg:hover .clients-svg:focus {
-  --color1:var(--accent-color)
+  --color1: var(--accent-color);
 }
 
 .clients-link {
@@ -560,8 +550,9 @@ a .variants {
   justify-content: center;
 }
 .footer-links {
-  display: inline-block;
+  display: flex;
   background-position: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
@@ -573,13 +564,12 @@ a .variants {
   background-color: var(--accent-color);
 }
 .footer-svg {
-  --color2:#ffffff
+  --color2: #ffffff;
   width: 20px;
   height: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 12px;
+  align-self: center;
+  margin: 0;
 }
 
 .adress {
