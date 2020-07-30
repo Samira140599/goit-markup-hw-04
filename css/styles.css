@@ -119,7 +119,7 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 11px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .contacts-list :nth-child(an + b = 2n) {
