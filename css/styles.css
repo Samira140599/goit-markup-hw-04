@@ -449,7 +449,7 @@ a .variants {
   justify-content: center;
 }
 .social-links-svg:hover {
-  fill: #ffffff;
+  --color2: #ffffff;
 }
 .team-title {
   margin: 0em;
@@ -510,6 +510,9 @@ a .variants {
   padding-top: 20px;
   fill: #afb1b8;
 }
+.clients-svg:hover .clients-svg:focus {
+  fill: var(--accent-color);
+}
 
 .clients-link {
   display: block;
@@ -521,7 +524,6 @@ a .variants {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
 }
 /*FOOTER*/
 
