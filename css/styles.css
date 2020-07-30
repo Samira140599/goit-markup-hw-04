@@ -510,15 +510,7 @@ a .variants {
   padding-top: 20px;
   fill: #afb1b8;
 }
-svg path {
-  stroke: inherit;
-  stroke-width: inherit;
-  fill: inherit;
-}
-.clients-svg:hover .clients-svg:focus {
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
-}
+
 .clients-link {
   display: block;
   background-color: #ffffff;
@@ -529,6 +521,7 @@ svg path {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 /*FOOTER*/
 
