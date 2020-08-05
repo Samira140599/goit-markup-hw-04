@@ -113,8 +113,8 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 11px;
-  --color1: #757575;
 }
+
 .сontacts-item:hover,
 .contacts-item:focus {
   --color1: var(--accent-color);
@@ -425,6 +425,7 @@ a .variants {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  color: #afb1b8;
   background-color: #ffffff;
   justify-content: center;
 }
@@ -439,14 +440,14 @@ a .variants {
   height: 20px;
   display: block;
   align-self: center;
+  fill: currentColor;
 }
 .social-links:hover {
   background-color: var(--accent-color);
+  сolor: #ffffff;
   border-radius: 50%;
 }
-.social-links-svg:hover {
-  --color2: #ffffff;
-}
+
 .team-title {
   margin: 0em;
   color: var(--dark-color);
